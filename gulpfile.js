@@ -40,13 +40,13 @@ function watch() {
 };
 
 gulp.task('imagemin', function () {
-    return gulp.src('images/*')
+    return gulp.src('includes/images/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('images'));
+        .pipe(gulp.dest('includes/dist/images'));
 });
 
 gulp.task('sass', function() {
@@ -86,3 +86,5 @@ gulp.task('default', function(){
     });
 
 });
+
+gulp.task('build', ['sass', 'js', 'imagemin']);
