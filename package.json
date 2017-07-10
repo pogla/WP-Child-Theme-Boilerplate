@@ -1,0 +1,40 @@
+{
+  "name": "boilerplate-gulp",
+  "version": "1.0.0",
+  "description": "Gulp dependencies for Custom WordPress theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "browserify -r ./node_modules/markerclustererplus/dist/markerclusterer.min.js -o ./js/vendor.js"
+  },
+  "author": "Matic Pogladič",
+  "license": "ISC",
+  "devDependencies": {
+    "amd-optimize": "^0.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "google-maps": "^3.2.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-babel": "^6.1.2",
+    "gulp-commonjs": "^0.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.12.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.8",
+    "gulp-wrap-commonjs": "^0.1.14",
+    "imagemin-pngquant": "^4.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "markerclustererplus": "^2.1.4"
+  }
+}
